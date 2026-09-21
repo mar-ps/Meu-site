@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+  <!-- Define o conjunto de caracteres -->
+  <meta charset="UTF-8">
+
+  <!-- Ajusta a página para dispositivos móveis -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Título da aba/navegador -->
+  <title>Minha Página</title>
+
+  <!-- Descrição para buscadores -->
+  <meta name="description" content="Descrição breve da página.">
+
+  <!-- Palavras-chave (menos usado hoje em dia) -->
+  <meta name="keywords" content="HTML, exemplo, tutorial">
+
+  <!-- Autor -->
+  <meta name="author" content="Seu Nome">
+
+  <!-- Link para arquivos CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Ícone da aba (favicon) -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Scripts que precisam ser carregados antes do body -->
+  <script src="script.js" defer></script>
+  <style>
+    :root {
+      --primary-color:#498ac4;
+      --secondary-color: #FF9800;
+      --background-color: #f5f5f5;
+      --text-color: #333;
+    }
+
+    body {
+      background: var(--background-color);
+      color: var(--text-color);
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: var(--primary-color);
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1, h2 {
+      font-family: 'Montserrat', sans-serif;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    button {
+      background: var(--primary-color);
+      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    button:hover {
+      background: var(--secondary-color);
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+    </head>
+    <body>
+        <h1>Marcus e Ane</h1>
+        <header>
+            <div class= "content">
+        <img src="img\IMG_2109.jpg">
+        <p>Este site é para declarar meu amor pela Ane</p>
+        <div class="container">
+    <div class="card">
+      <h2>Fotos</h2>
+      <p>As recordações que registramos de momentos felizes.</p>
+      <button>Clique aqui</button>
+    </div>
+    <div class="card">
+      <h2>Motivos de te amar</h2>
+      <p>São tantos que jamais conseguirei dizer todos, mas vou tentar.</p>
+      <button>Saiba mais</button>
+    </div>
+       </header>
+    </body>
+</html>
